@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Escoge un stickers</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+    <p class="title">Puedes llevar hasta 10 stickers en total</p>
+    <div class="main-content">
+        <div>
+            <img src="assets/img/sticker1.jpg" class="img-base" alt="Sticker 1">
+            <input type="number" class="input-base input-1">
+        </div>
+        <div>
+            <img src="assets/img/sticker2.jpg" class="img-base" alt="Sticker 2">
+            <input type="number" class="input-base input-2">
+        </div>
+        <div>
+            <img src="assets/img/sticker3.jpg" class="img-base" alt="Sticker 3">
+            <input type="number" class="input-base input-3">
+        </div>
+    </div>
+    <div class="validation">
+        <p class="text-validation"></p>
+        <button onclick="
+        const input1 = Number(document.querySelector('.input-1').value);
+        const input2 = Number(document.querySelector('.input-2').value)
+        const input3 = Number(document.querySelector('.input-3').value);
+
+        const total = input1 + input2 + input3;
+        const text = document.querySelector('.text-validation');
+
+        if (total <= 10) {
+            text.textContent = 'Llevas ' + total + ' stickers';
+        } else {
+            text.textContent = 'Llevas demasiados stickers';
+        }
+        ">Verificar</button>
+    </div>
+    <script src="assets/js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,84 @@
+
+.title {
+    text-align: center;
+}
+
+.main-content {
+    display: flex;
+    justify-content: center;
+}
+
+.main-content > div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.main-content select{
+    font-size: 16px;
+    width: 40px;
+}
+
+.img-base {
+    max-height: 300px;
+}
+
+.input-base{
+    margin-top: 20px;
+}
+
+.validation{
+    margin-top: 20px;
+    text-align: center;
+    align-items: center;
+    width: 100%;
+}
+
+.menu-wrapper {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Segoe UI', system-ui, sans-serif;
+}
+
+.menu {
+    text-align: center;
+    padding: 50px 60px;
+    border-radius: 24px;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(14px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.35);
+    max-width: 360px;
+    width: 100%;
+}
+
+.menu h1 {
+    margin-bottom: 35px;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+.menu a {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 14px 0;
+    padding: 16px 20px;
+    border-radius: 14px;
+    text-decoration: none;
+    font-size: 18px;
+    color: #0f172a;
+    background: linear-gradient(135deg, #f9fafb, #e5e7eb);
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.menu a span {
+    font-size: 14px;
+    opacity: 0.6;
+}
+
+.menu a:hover {
+    transform: translateY(-4px) scale(1.02);
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.25);
+}
